@@ -1,12 +1,8 @@
 {
-  "name": "less-import-loader",
+  "name": "style-import-loader",
   "version": "0.1.0",
   "description": "add global dependencies to less file for webpack ",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "https:github.com/MaxLee1994/less-import-loader"
-  },
   "scripts": {
     "test": "gulp"
   },
@@ -15,7 +11,7 @@
     "import",
     "webpack"
   ],
-  "author": "Max <liyue4158@gmail.com>",
+  "author": "Laza Bogdan <laza.bogdan@macro-net.ro>",
   "license": "ISC",
   "dependencies": {
     "loader-utils": "^0.2.12",
@@ -28,5 +24,16 @@
     "gulp-mocha": "^2.1.3",
     "raw-loader": "^0.5.1",
     "webpack-stream": "^2.1.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lazabogdan/style-import-loader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lazabogdan/style-import-loader/issues"
+  },
+  "homepage": "https://github.com/lazabogdan/style-import-loader#readme"
 }

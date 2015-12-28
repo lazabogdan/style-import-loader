@@ -1,8 +1,3 @@
-/**
- * @fileOverview index.js
- * @author Max
- **/
-
 var path = require('path');
 var assign = require('object-assign');
 var utils = require('loader-utils');
@@ -30,7 +25,7 @@ module.exports = function(source) {
  */
 function getLoaderConfig(loaderContext) {
     var query = utils.parseQuery(loaderContext.query);
-    var configKey = query.config || 'lessImportLoader';
+    var configKey = query.config || 'styleImportLoader';
     var config = loaderContext.options[configKey] || {};
 
     delete query.config;
