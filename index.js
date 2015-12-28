@@ -10,10 +10,13 @@ module.exports = function(source) {
     var result = source;
 
     if(options && options.base) {
-        result = '@import "' + path.relative(path.dirname(this.resourcePath), options.base) + '";\n' + result;
+        if (options.mode === 'append') {
+            return result + '\n@import "' + path.relative(path.dirname(this.resourcePath), options.base) + '";';
+        }
+        return '@import "' + path.relative(path.dirname(this.resourcePath), options.base) + '";\n' + result;
     }
 
-    return result;
+    return source;
 };
 
 /**

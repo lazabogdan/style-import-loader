@@ -13,5 +13,9 @@ module.exports = {
     },
     anotherConfig: {
         base: path.join(process.cwd(), 'test/less/base-another')
+    },
+    insertAppend: {
+        mode: 'append', 
+        base: path.join(process.cwd(), 'test/less/base-another')
     }
 };
